@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body {
+    color: #111;
+    font-size: 15px;
+     font-weight: 400; 
+    line-height: 1.6; 
+      background-image: url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vdmllfGVufDB8fDB8fA%3D%3D&w=1000&q=80"); 
+        width: 100%;
+        height: 90%;
+         background-size: cover; 
+      background-repeat: no-repeat;
+    opacity: .8;
+}
+
+h1{
+    color: blue;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+    margin: auto;
+    background-color: white
+}
+#sam{
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    margin-bottom: 100px;
+    height: 80px;
+    align-items: center;
+    padding: 25px 0 0 20px;
+    display: flex;
+ gap: 45px;
+}
+
+button{
+    background-color: burlywood;
+    color: brown;
+    align-self: center;
+    padding: 10px;
+    border-radius: 40%;
+    font-size: 1.2em;
+}
+input{
+    align-items: center;
+    width: 30%;
+    height: 30px;
+    border-radius: 45%;
+    text-indent: 10rem;
+}
+</style>
+<body>
+   
+    
+<div id="sam">
+<h1>MyMovies APP</h1>
+    <input type="text" id="movie" placeholder="Search Movies">
+
+    <button onclick="getMoviesData()">Search</button>
+</div>
+    <div id="container">
+    </div>
+</div>
+</body>
+</html>
+<script src="movie.js"></script>

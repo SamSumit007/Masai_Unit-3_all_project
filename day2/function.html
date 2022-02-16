@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+const amar = {
+    name: 'Amar',
+    prof: 'singer',
+    location:'Goa',
+ createForm() {
+console.log(`Amar Prof ${this.prof}`)
+ }
+}
+
+amar.createForm()
+
+const akbar = {
+    name: "akbar",
+    prof: 'chef',
+    location:'Mumbai',
+    createForm() {
+console.log(`Akbar Prof ${this.prof}`)
+ }
+}
+akbar.createForm()
+
+const anthony = {
+    name: 'Anthony',
+    prof: 'Magician',
+    location:'Kashmir',
+    createForm() {
+console.log(`Anthony Prof ${this.prof}`)
+ }
+}
+anthony.createForm()
+
+
+amar.createForm.call(akbar)
+akbar.createForm.call(anthony)
+anthony.createForm.call(amar)
+</script>
